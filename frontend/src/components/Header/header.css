@@ -1,0 +1,130 @@
+.nav__container {
+  position: fixed;
+  padding: 0.5rem 0;
+  background: #f9f9f9;
+  margin: 0%;
+  z-index: 1;
+}
+
+.nav__container.scrolled {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow styling for the scrolled state */
+}
+
+ul li {
+  margin: 0 1.3rem;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__other-links {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  color: #001747;
+}
+
+.nav__other-links:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #001747;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav__other-links:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active__link {
+  padding-bottom: 1.5px;
+  border-bottom: 2px solid #001747;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  color: #001747;
+  transition: 0.2s ease-in;
+}
+
+.nav__myLogo img {
+  width: 4rem;
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1024px) {
+  .nav__container {
+    position: fixed;
+    padding: 0.5rem 0;
+    background: #f9f9f9;
+    margin: 0%;
+    z-index: 1;
+  }
+
+  .nav__myLogo img {
+    width: 4rem;
+  }
+
+  ul li {
+    margin: 0 0.9rem;
+  }
+  .nav__other-links {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: #001747;
+  }
+
+  .active__link {
+    padding-bottom: 1.5px;
+    border-bottom: 2px solid #001747;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: #001747;
+    transition: 0.2s ease-in;
+  }
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width: 600px) {
+  .nav__myLogo img {
+    width: 2rem;
+  }
+
+  ul li {
+    margin: 0 0.6rem;
+  }
+  .nav__other-links {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: #001747;
+  }
+
+  .active__link {
+    padding-bottom: 1.5px;
+    border-bottom: 2px solid #001747;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: #001747;
+    transition: 0.2s ease-in;
+  }
+}

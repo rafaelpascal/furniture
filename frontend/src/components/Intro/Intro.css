@@ -1,0 +1,148 @@
+.intro__container {
+  background: #f9f9f9;
+  margin: 0%;
+  padding: 0%;
+}
+
+.intro__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.intro__text {
+  width: 30%;
+}
+
+.intro__text h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-header);
+  line-height: 16px;
+  margin-bottom: 1rem;
+}
+
+.intro__text h2 {
+  margin-bottom: 1rem;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--color-header);
+  line-height: 50.0002px;
+}
+
+.intro__text p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-header);
+  line-height: 25px;
+}
+
+.intro__text img {
+  width: 10rem;
+}
+
+.intro__image {
+  width: 70%;
+}
+
+.intro__image img {
+  width: 100%;
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1024px) {
+  .intro__content {
+    padding: 0 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro__text {
+    margin-top: 8rem;
+    width: 100%;
+  }
+
+  .intro__text h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-header);
+    line-height: 12px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .intro__text h2 {
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-header);
+    line-height: 40.0002px;
+  }
+
+  .intro__text img {
+    width: 6rem;
+  }
+
+  .intro__image {
+    width: 100%;
+  }
+
+  .intro__image img {
+    width: 100%;
+  }
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width: 600px) {
+  .intro__content {
+    padding: 0 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro__text {
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  .intro__text h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-header);
+    line-height: 12px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .intro__text h2 {
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-header);
+    line-height: 40.0002px;
+  }
+
+  .intro__text img {
+    width: 6rem;
+  }
+
+  .intro__image {
+    width: 100%;
+  }
+
+  .intro__image img {
+    width: 100%;
+  }
+}

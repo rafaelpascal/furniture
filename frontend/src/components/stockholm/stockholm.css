@@ -1,0 +1,250 @@
+.stockholm__container {
+  margin: 4rem 0;
+}
+.stockholm__container p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(0, 23, 71);
+}
+
+.stockholm__container h2 {
+  margin-top: 1rem;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  color: rgb(0, 23, 71);
+}
+
+.stockholm__container-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.stockholm__container-img {
+  width: 49.5%;
+  /* height: 100%; */
+}
+
+.stockholm__container-otjer-img {
+  width: 50.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stockholm__container-otjer-img div {
+  margin: 10px 5px;
+}
+
+.image__stock {
+  width: 100%;
+  background: var(--color-bg-card);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block; */
+  /* margin: 1rem; */
+}
+
+.write__up {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.write__up-p {
+  margin-bottom: 0.4rem;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(0, 23, 71);
+  /* margin-top: 0.4rem; */
+}
+
+.write__up-h2 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(0, 23, 71);
+}
+
+.write__up-btn {
+  position: absolute;
+  right: -30px; /* Start the button off-screen to the right */
+  top: 72%;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: right 0.9s ease;
+  /* transition: opacity 0.5s ease; */
+  background: transparent;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(0, 23, 71);
+}
+
+.write__up-btn:hover {
+  cursor: pointer;
+  position: absolute;
+  right: -30px; /* Start the button off-screen to the right */
+  top: 72%;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: right 0.9s ease;
+  /* transition: opacity 0.5s ease; */
+  background: transparent;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(0, 23, 71);
+}
+
+.image__stock:hover .write__up-btn {
+  opacity: 1;
+  right: 30%; /* Slide the button in from the right on hover */
+}
+
+.write__up-p-price {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(0, 23, 71);
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* transition: opacity 0.9s ease; */
+}
+
+.image__stock:hover .write__up-p-price {
+  /* left: -100%; Slide the button in from the right on hover */
+  opacity: 0;
+  transform: translateX(-10rem);
+}
+
+.write__up-btn-mouseleave {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(0, 23, 71);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* transition: opacity 0.9s ease; */
+}
+
+.image__stock:hover .write__up-btn-mouseleave {
+  /* left: -100%; Slide the button in from the right on hover */
+  opacity: 1;
+  transform: translateX(10rem);
+}
+
+.image__stock img {
+  width: 100%;
+  /* margin: 1rem; */
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1024px) {
+  .stockholm__container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .stockholm__container-img {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .stockholm__container-otjer-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stockholm__container-otjer-img div {
+    margin: 10px 0px;
+  }
+  .stockholm__container p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(0, 23, 71);
+    padding: 0.4rem;
+  }
+
+  .stockholm__container h2 {
+    margin-top: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 0.4rem;
+    color: rgb(0, 23, 71);
+  }
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width: 600px) {
+  .stockholm__container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .stockholm__container-img {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .stockholm__container-otjer-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stockholm__container-otjer-img div {
+    margin: 10px 0px;
+  }
+  .stockholm__container p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(0, 23, 71);
+    padding: 0.4rem;
+  }
+
+  .stockholm__container h2 {
+    margin-top: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 0.4rem;
+    color: rgb(0, 23, 71);
+  }
+}

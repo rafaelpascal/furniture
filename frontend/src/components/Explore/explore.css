@@ -1,0 +1,253 @@
+.explore__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.explore__container-text h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(0, 23, 71);
+  margin: 0.9rem 0;
+}
+
+.explore__container-text p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgb(0, 23, 71);
+  width: 80%;
+}
+
+.explore__container-text h2 {
+  margin-top: 1rem;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50.0002px;
+  color: rgb(0, 23, 71);
+  margin: 0.9rem 0;
+  width: 60%;
+}
+
+.explore__container-text button {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 23, 71);
+  margin-top: 5rem;
+  background: transparent;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid #001747;
+}
+
+.explore__container-text button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #001747;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.explore__container-text button:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.explore__container-text {
+  margin-left: 5rem;
+  width: 40%;
+}
+
+/* src/components/SlidingImage.css */
+.sliding-image-container {
+  margin-left: 2rem;
+  width: 60%;
+  /* overflow: hidden; */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: relative;
+}
+
+.sliding-image {
+  width: 100%; /* Adjust the image width as needed */
+  position: absolute;
+  right: -50%; /* Initially position the image outside the container to the right */
+  transition: right 2s ease-in-out; /* Transition property for the slide effect */
+}
+
+.sliding-image-container.active .sliding-image {
+  opacity: 1;
+}
+
+.fade-in-image-container {
+  margin-left: 2rem;
+  width: 60%;
+  /* overflow: hidden; */
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in-image-container.loaded {
+  opacity: 1;
+}
+
+.fade-in-image {
+  width: 100%; /* Adjust the image width as needed */
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width: 1024px) {
+  .sliding-image-container-small {
+    margin-left: 0rem;
+    width: 100%;
+    /* overflow: hidden; */
+    /* position: relative; */
+  }
+
+  .sliding-image-small {
+    width: 100%; /* Adjust the image width as needed */
+    /* position: absolute; */
+  }
+
+  .explore__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .explore__container-text {
+    margin: 1.5rem 0rem;
+    width: 100%;
+  }
+
+  /* src/components/SlidingImage.css */
+  .sliding-image-container {
+    margin-left: 0rem;
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  .explore__container-text h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(0, 23, 71);
+    margin: 0.9rem 0;
+  }
+
+  .explore__container-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgb(0, 23, 71);
+    width: 100%;
+  }
+
+  .explore__container-text h2 {
+    margin-top: 1rem;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50.0002px;
+    color: rgb(0, 23, 71);
+    margin: 0.9rem 0;
+    width: 100%;
+  }
+
+  .explore__container-text button {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 23, 71);
+    margin-top: 1rem;
+    background: transparent;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid #001747;
+  }
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width: 600px) {
+  .sliding-image-container-small {
+    margin-left: 0rem;
+    width: 100%;
+    /* overflow: hidden; */
+    /* position: relative; */
+  }
+
+  .sliding-image-small {
+    width: 100%; /* Adjust the image width as needed */
+    /* position: absolute; */
+  }
+
+  .explore__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .explore__container-text {
+    margin: 1.5rem 0rem;
+    width: 100%;
+  }
+
+  /* src/components/SlidingImage.css */
+  .sliding-image-container {
+    margin-left: 0rem;
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  .explore__container-text h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(0, 23, 71);
+    margin: 0.9rem 0;
+  }
+
+  .explore__container-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgb(0, 23, 71);
+    width: 100%;
+  }
+
+  .explore__container-text h2 {
+    margin-top: 1rem;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50.0002px;
+    color: rgb(0, 23, 71);
+    margin: 0.9rem 0;
+    width: 100%;
+  }
+
+  .explore__container-text button {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 23, 71);
+    margin-top: 1rem;
+    background: transparent;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid #001747;
+  }
+}
